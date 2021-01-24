@@ -1,21 +1,21 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "floravel/human-comparator",
+    "description": "A package that returns some interesting data about the specific human.",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "floravel",
+        "human-comparator"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/floravel/human-comparator",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Florian Heß",
+            "email": "flo-hess1@web.de",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.4|^8.0"
+        "php": "^7.4"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.17",
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "Floravel\\HumanComparator\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Floravel\\HumanComparator\\Tests\\": "tests"
         }
     },
     "scripts": {
