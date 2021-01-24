@@ -3,8 +3,8 @@
 namespace Floravel\HumanComparator\Tests;
 
 use Floravel\HumanComparator\Human as Human;
-use PHPUnit\Framework\TestCase;
 use function PHPUnit\Framework\assertEquals;
+use PHPUnit\Framework\TestCase;
 
 class HumanTest extends TestCase
 {
