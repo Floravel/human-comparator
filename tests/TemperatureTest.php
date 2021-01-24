@@ -3,18 +3,19 @@
 
 namespace Floravel\HumanComparator\Tests;
 
-use Floravel\HumanComparator\Weight;
+use Floravel\HumanComparator\Temperature;
 use PHPUnit\Framework\TestCase;
 
-class WeightTest extends TestCase
+class TemperatureTest extends TestCase
 {
     /** @test */
-    public function it_can_convert_kilograms_to_lbs()
+    public function it_can_convert_celsius_to_fahrenheit()
     {
-        $lbs = Weight::fromKilograms(100)->toLbs();
-        $weight = Weight::fromKilograms(200);
-        $this->assertIsObject($weight);
-        $this->assertEquals(220.4623, $lbs);
-        $this->assertEquals(440.9246, $weight->toLbs());
+        $fahrenheit = Temperature::forCelsius(100)->toFahrenheit();
+        $temperature = Temperature::forCelsius(2);
+
+        $this->assertIsObject($temperature);
+        $this->assertEquals(212, $fahrenheit);
+        $this->assertEquals(35.6, $temperature->toFahrenheit());
     }
 }
