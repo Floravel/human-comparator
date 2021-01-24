@@ -3,7 +3,6 @@
 
 namespace Floravel\HumanComparator\Tests;
 
-
 use Floravel\HumanComparator\Weight;
 use PHPUnit\Framework\TestCase;
 
@@ -19,5 +18,4 @@ class WeightTest extends TestCase
 //        $this->assertEquals(220.4623, $lbs);
 //        $this->assertEquals(440.9246, $weight->toLbs());
     }
-
 }
